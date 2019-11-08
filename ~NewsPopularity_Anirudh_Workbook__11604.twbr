@@ -1,0 +1,1367 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0515.1630                               -->
+<workbook source-build='2019.2.0 (20192.19.0515.1630)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='OnlineNewsPopularity' inline='true' name='federated.1rrz9e51vaxs1e17pads70435nw4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='OnlineNewsPopularity' name='textscan.1aw1vga0g5b18m1h5ys9d1x1f7mh'>
+            <connection class='textscan' directory='C:/Users/haricharan/##/5 News online/Online_news_Team_5/OnlineNewsPopularity' filename='OnlineNewsPopularity.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1aw1vga0g5b18m1h5ys9d1x1f7mh' name='OnlineNewsPopularity.csv' table='[OnlineNewsPopularity#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='url' ordinal='0' />
+            <column datatype='real' name='timedelta' ordinal='1' />
+            <column datatype='real' name='n_tokens_title' ordinal='2' />
+            <column datatype='real' name='n_tokens_content' ordinal='3' />
+            <column datatype='real' name='n_unique_tokens' ordinal='4' />
+            <column datatype='real' name='n_non_stop_words' ordinal='5' />
+            <column datatype='real' name='n_non_stop_unique_tokens' ordinal='6' />
+            <column datatype='real' name='num_hrefs' ordinal='7' />
+            <column datatype='real' name='num_self_hrefs' ordinal='8' />
+            <column datatype='real' name='num_imgs' ordinal='9' />
+            <column datatype='real' name='num_videos' ordinal='10' />
+            <column datatype='real' name='average_token_length' ordinal='11' />
+            <column datatype='real' name='num_keywords' ordinal='12' />
+            <column datatype='real' name='data_channel_is_lifestyle' ordinal='13' />
+            <column datatype='real' name='data_channel_is_entertainment' ordinal='14' />
+            <column datatype='real' name='data_channel_is_bus' ordinal='15' />
+            <column datatype='real' name='data_channel_is_socmed' ordinal='16' />
+            <column datatype='real' name='data_channel_is_tech' ordinal='17' />
+            <column datatype='real' name='data_channel_is_world' ordinal='18' />
+            <column datatype='real' name='kw_min_min' ordinal='19' />
+            <column datatype='real' name='kw_max_min' ordinal='20' />
+            <column datatype='real' name='kw_avg_min' ordinal='21' />
+            <column datatype='real' name='kw_min_max' ordinal='22' />
+            <column datatype='real' name='kw_max_max' ordinal='23' />
+            <column datatype='real' name='kw_avg_max' ordinal='24' />
+            <column datatype='real' name='kw_min_avg' ordinal='25' />
+            <column datatype='real' name='kw_max_avg' ordinal='26' />
+            <column datatype='real' name='kw_avg_avg' ordinal='27' />
+            <column datatype='real' name='self_reference_min_shares' ordinal='28' />
+            <column datatype='real' name='self_reference_max_shares' ordinal='29' />
+            <column datatype='real' name='self_reference_avg_sharess' ordinal='30' />
+            <column datatype='real' name='weekday_is_monday' ordinal='31' />
+            <column datatype='real' name='weekday_is_tuesday' ordinal='32' />
+            <column datatype='real' name='weekday_is_wednesday' ordinal='33' />
+            <column datatype='real' name='weekday_is_thursday' ordinal='34' />
+            <column datatype='real' name='weekday_is_friday' ordinal='35' />
+            <column datatype='real' name='weekday_is_saturday' ordinal='36' />
+            <column datatype='real' name='weekday_is_sunday' ordinal='37' />
+            <column datatype='real' name='is_weekend' ordinal='38' />
+            <column datatype='real' name='LDA_00' ordinal='39' />
+            <column datatype='real' name='LDA_01' ordinal='40' />
+            <column datatype='real' name='LDA_02' ordinal='41' />
+            <column datatype='real' name='LDA_03' ordinal='42' />
+            <column datatype='real' name='LDA_04' ordinal='43' />
+            <column datatype='real' name='global_subjectivity' ordinal='44' />
+            <column datatype='real' name='global_sentiment_polarity' ordinal='45' />
+            <column datatype='real' name='global_rate_positive_words' ordinal='46' />
+            <column datatype='real' name='global_rate_negative_words' ordinal='47' />
+            <column datatype='real' name='rate_positive_words' ordinal='48' />
+            <column datatype='real' name='rate_negative_words' ordinal='49' />
+            <column datatype='real' name='avg_positive_polarity' ordinal='50' />
+            <column datatype='real' name='min_positive_polarity' ordinal='51' />
+            <column datatype='real' name='max_positive_polarity' ordinal='52' />
+            <column datatype='real' name='avg_negative_polarity' ordinal='53' />
+            <column datatype='real' name='min_negative_polarity' ordinal='54' />
+            <column datatype='real' name='max_negative_polarity' ordinal='55' />
+            <column datatype='real' name='title_subjectivity' ordinal='56' />
+            <column datatype='real' name='title_sentiment_polarity' ordinal='57' />
+            <column datatype='real' name='abs_title_subjectivity' ordinal='58' />
+            <column datatype='real' name='abs_title_sentiment_polarity' ordinal='59' />
+            <column datatype='integer' name='shares' ordinal='60' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timedelta</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[timedelta]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>timedelta</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_tokens_title</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[n_tokens_title]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>n_tokens_title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_tokens_content</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[n_tokens_content]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>n_tokens_content</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_unique_tokens</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[n_unique_tokens]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>n_unique_tokens</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_non_stop_words</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[n_non_stop_words]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>n_non_stop_words</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_non_stop_unique_tokens</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[n_non_stop_unique_tokens]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>n_non_stop_unique_tokens</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_hrefs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_hrefs]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>num_hrefs</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_self_hrefs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_self_hrefs]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>num_self_hrefs</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_imgs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_imgs]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>num_imgs</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_videos</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_videos]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>num_videos</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_token_length</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_token_length]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>average_token_length</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_keywords</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_keywords]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>num_keywords</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_channel_is_lifestyle</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[data_channel_is_lifestyle]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>data_channel_is_lifestyle</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_channel_is_entertainment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[data_channel_is_entertainment]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>data_channel_is_entertainment</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_channel_is_bus</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[data_channel_is_bus]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>data_channel_is_bus</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_channel_is_socmed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[data_channel_is_socmed]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>data_channel_is_socmed</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_channel_is_tech</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[data_channel_is_tech]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>data_channel_is_tech</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_channel_is_world</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[data_channel_is_world]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>data_channel_is_world</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kw_min_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[kw_min_min]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>kw_min_min</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kw_max_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[kw_max_min]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>kw_max_min</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kw_avg_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[kw_avg_min]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>kw_avg_min</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kw_min_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[kw_min_max]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>kw_min_max</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kw_max_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[kw_max_max]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>kw_max_max</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kw_avg_max</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[kw_avg_max]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>kw_avg_max</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kw_min_avg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[kw_min_avg]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>kw_min_avg</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kw_max_avg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[kw_max_avg]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>kw_max_avg</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kw_avg_avg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[kw_avg_avg]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>kw_avg_avg</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>self_reference_min_shares</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[self_reference_min_shares]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>self_reference_min_shares</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>self_reference_max_shares</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[self_reference_max_shares]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>self_reference_max_shares</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>self_reference_avg_sharess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[self_reference_avg_sharess]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>self_reference_avg_sharess</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekday_is_monday</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weekday_is_monday]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>weekday_is_monday</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekday_is_tuesday</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weekday_is_tuesday]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>weekday_is_tuesday</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekday_is_wednesday</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weekday_is_wednesday]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>weekday_is_wednesday</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekday_is_thursday</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weekday_is_thursday]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>weekday_is_thursday</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekday_is_friday</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weekday_is_friday]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>weekday_is_friday</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekday_is_saturday</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weekday_is_saturday]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>weekday_is_saturday</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekday_is_sunday</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weekday_is_sunday]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>weekday_is_sunday</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_weekend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[is_weekend]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>is_weekend</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LDA_00</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LDA_00]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>LDA_00</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LDA_01</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LDA_01]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>LDA_01</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LDA_02</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LDA_02]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>LDA_02</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LDA_03</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LDA_03]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>LDA_03</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LDA_04</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LDA_04]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>LDA_04</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>global_subjectivity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[global_subjectivity]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>global_subjectivity</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>global_sentiment_polarity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[global_sentiment_polarity]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>global_sentiment_polarity</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>global_rate_positive_words</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[global_rate_positive_words]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>global_rate_positive_words</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>global_rate_negative_words</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[global_rate_negative_words]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>global_rate_negative_words</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rate_positive_words</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rate_positive_words]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>rate_positive_words</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rate_negative_words</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rate_negative_words]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>rate_negative_words</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_positive_polarity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_positive_polarity]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>avg_positive_polarity</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>min_positive_polarity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[min_positive_polarity]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>min_positive_polarity</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_positive_polarity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[max_positive_polarity]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>max_positive_polarity</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_negative_polarity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_negative_polarity]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>avg_negative_polarity</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>min_negative_polarity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[min_negative_polarity]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>min_negative_polarity</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_negative_polarity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[max_negative_polarity]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>max_negative_polarity</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_subjectivity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[title_subjectivity]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>title_subjectivity</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_sentiment_polarity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[title_sentiment_polarity]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>title_sentiment_polarity</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>abs_title_subjectivity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[abs_title_subjectivity]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>abs_title_subjectivity</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>abs_title_sentiment_polarity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[abs_title_sentiment_polarity]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>abs_title_sentiment_polarity</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shares</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shares]</local-name>
+            <parent-name>[OnlineNewsPopularity.csv]</parent-name>
+            <remote-alias>shares</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Lda 00' datatype='real' name='[LDA_00]' role='measure' type='quantitative' />
+      <column caption='Lda 01' datatype='real' name='[LDA_01]' role='measure' type='quantitative' />
+      <column caption='Lda 02' datatype='real' name='[LDA_02]' role='measure' type='quantitative' />
+      <column caption='Lda 03' datatype='real' name='[LDA_03]' role='measure' type='quantitative' />
+      <column caption='Lda 04' datatype='real' name='[LDA_04]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Num Imgs (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[num_imgs]' new-bin='true'>
+          <bin default-name='false' value='&quot;25 and above&quot;'>
+            <value>25.0</value>
+            <value>26.0</value>
+            <value>27.0</value>
+            <value>28.0</value>
+            <value>29.0</value>
+            <value>30.0</value>
+            <value>31.0</value>
+            <value>32.0</value>
+            <value>33.0</value>
+            <value>34.0</value>
+            <value>35.0</value>
+            <value>36.0</value>
+            <value>37.0</value>
+            <value>38.0</value>
+            <value>39.0</value>
+            <value>40.0</value>
+            <value>41.0</value>
+            <value>42.0</value>
+            <value>43.0</value>
+            <value>44.0</value>
+            <value>45.0</value>
+            <value>46.0</value>
+            <value>47.0</value>
+            <value>48.0</value>
+            <value>49.0</value>
+            <value>50.0</value>
+            <value>51.0</value>
+            <value>52.0</value>
+            <value>53.0</value>
+            <value>54.0</value>
+            <value>55.0</value>
+            <value>56.0</value>
+            <value>57.0</value>
+            <value>58.0</value>
+            <value>59.0</value>
+            <value>60.0</value>
+            <value>61.0</value>
+            <value>62.0</value>
+            <value>63.0</value>
+            <value>64.0</value>
+            <value>65.0</value>
+            <value>66.0</value>
+            <value>67.0</value>
+            <value>68.0</value>
+            <value>69.0</value>
+            <value>70.0</value>
+            <value>71.0</value>
+            <value>73.0</value>
+            <value>75.0</value>
+            <value>76.0</value>
+            <value>77.0</value>
+            <value>79.0</value>
+            <value>80.0</value>
+            <value>83.0</value>
+            <value>84.0</value>
+            <value>90.0</value>
+            <value>91.0</value>
+            <value>92.0</value>
+            <value>93.0</value>
+            <value>98.0</value>
+            <value>99.0</value>
+            <value>100.0</value>
+            <value>101.0</value>
+            <value>108.0</value>
+            <value>111.0</value>
+            <value>128.0</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Num Videos (group)]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[num_videos]' new-bin='true'>
+          <bin default-name='true' value='&quot;7, 8, 9 and 35 more&quot;'>
+            <value>7.0</value>
+            <value>8.0</value>
+            <value>9.0</value>
+            <value>10.0</value>
+            <value>11.0</value>
+            <value>12.0</value>
+            <value>13.0</value>
+            <value>14.0</value>
+            <value>15.0</value>
+            <value>16.0</value>
+            <value>17.0</value>
+            <value>18.0</value>
+            <value>19.0</value>
+            <value>20.0</value>
+            <value>21.0</value>
+            <value>22.0</value>
+            <value>23.0</value>
+            <value>24.0</value>
+            <value>25.0</value>
+            <value>26.0</value>
+            <value>27.0</value>
+            <value>28.0</value>
+            <value>29.0</value>
+            <value>30.0</value>
+            <value>31.0</value>
+            <value>32.0</value>
+            <value>33.0</value>
+            <value>34.0</value>
+            <value>35.0</value>
+            <value>36.0</value>
+            <value>38.0</value>
+            <value>42.0</value>
+            <value>46.0</value>
+            <value>48.0</value>
+            <value>49.0</value>
+            <value>50.0</value>
+            <value>51.0</value>
+            <value>53.0</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Abs Title Sentiment Polarity' datatype='real' name='[abs_title_sentiment_polarity]' role='measure' type='quantitative' />
+      <column caption='Abs Title Subjectivity' datatype='real' name='[abs_title_subjectivity]' role='measure' type='quantitative' />
+      <column caption='Average Token Length' datatype='real' name='[average_token_length]' role='measure' type='quantitative' />
+      <column caption='Avg Negative Polarity' datatype='real' name='[avg_negative_polarity]' role='measure' type='quantitative' />
+      <column caption='Avg Positive Polarity' datatype='real' name='[avg_positive_polarity]' role='measure' type='quantitative' />
+      <column caption='Data Channel Is Bus' datatype='real' name='[data_channel_is_bus]' role='measure' type='quantitative' />
+      <column caption='Data Channel Is Entertainment' datatype='real' name='[data_channel_is_entertainment]' role='measure' type='quantitative' />
+      <column caption='Data Channel Is Lifestyle' datatype='real' name='[data_channel_is_lifestyle]' role='measure' type='quantitative' />
+      <column caption='Data Channel Is Socmed' datatype='real' name='[data_channel_is_socmed]' role='measure' type='quantitative' />
+      <column caption='Data Channel Is Tech' datatype='real' name='[data_channel_is_tech]' role='measure' type='quantitative' />
+      <column caption='Data Channel Is World' datatype='real' name='[data_channel_is_world]' role='measure' type='quantitative' />
+      <column caption='Global Rate Negative Words' datatype='real' name='[global_rate_negative_words]' role='measure' type='quantitative' />
+      <column caption='Global Rate Positive Words' datatype='real' name='[global_rate_positive_words]' role='measure' type='quantitative' />
+      <column caption='Global Sentiment Polarity' datatype='real' name='[global_sentiment_polarity]' role='measure' type='quantitative' />
+      <column caption='Global Subjectivity' datatype='real' name='[global_subjectivity]' role='measure' type='quantitative' />
+      <column caption='Is Weekend' datatype='real' name='[is_weekend]' role='measure' type='quantitative' />
+      <column caption='Kw Avg Avg' datatype='real' name='[kw_avg_avg]' role='measure' type='quantitative' />
+      <column caption='Kw Avg Max' datatype='real' name='[kw_avg_max]' role='measure' type='quantitative' />
+      <column caption='Kw Avg Min' datatype='real' name='[kw_avg_min]' role='measure' type='quantitative' />
+      <column caption='Kw Max Avg' datatype='real' name='[kw_max_avg]' role='measure' type='quantitative' />
+      <column caption='Kw Max Max' datatype='real' name='[kw_max_max]' role='measure' type='quantitative' />
+      <column caption='Kw Max Min' datatype='real' name='[kw_max_min]' role='measure' type='quantitative' />
+      <column caption='Kw Min Avg' datatype='real' name='[kw_min_avg]' role='measure' type='quantitative' />
+      <column caption='Kw Min Max' datatype='real' name='[kw_min_max]' role='measure' type='quantitative' />
+      <column caption='Kw Min Min' datatype='real' name='[kw_min_min]' role='measure' type='quantitative' />
+      <column caption='Max Negative Polarity' datatype='real' name='[max_negative_polarity]' role='measure' type='quantitative' />
+      <column caption='Max Positive Polarity' datatype='real' name='[max_positive_polarity]' role='measure' type='quantitative' />
+      <column caption='Min Negative Polarity' datatype='real' name='[min_negative_polarity]' role='measure' type='quantitative' />
+      <column caption='Min Positive Polarity' datatype='real' name='[min_positive_polarity]' role='measure' type='quantitative' />
+      <column caption='N Non Stop Unique Tokens' datatype='real' name='[n_non_stop_unique_tokens]' role='measure' type='quantitative' />
+      <column caption='N Non Stop Words' datatype='real' name='[n_non_stop_words]' role='measure' type='quantitative' />
+      <column caption='N Tokens Content' datatype='real' name='[n_tokens_content]' role='measure' type='quantitative' />
+      <column caption='N Tokens Title' datatype='real' name='[n_tokens_title]' role='measure' type='quantitative' />
+      <column caption='N Unique Tokens' datatype='real' name='[n_unique_tokens]' role='measure' type='quantitative' />
+      <column caption='Num Hrefs' datatype='real' name='[num_hrefs]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Num Imgs' datatype='real' name='[num_imgs]' role='dimension' type='ordinal' />
+      <column caption='Num Keywords' datatype='real' name='[num_keywords]' role='measure' type='quantitative' />
+      <column caption='Num Self Hrefs' datatype='real' name='[num_self_hrefs]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Num Videos' datatype='real' name='[num_videos]' role='dimension' type='ordinal' />
+      <column caption='Rate Negative Words' datatype='real' name='[rate_negative_words]' role='measure' type='quantitative' />
+      <column caption='Rate Positive Words' datatype='real' name='[rate_positive_words]' role='measure' type='quantitative' />
+      <column caption='Self Reference Avg Sharess' datatype='real' name='[self_reference_avg_sharess]' role='measure' type='quantitative' />
+      <column caption='Self Reference Max Shares' datatype='real' name='[self_reference_max_shares]' role='measure' type='quantitative' />
+      <column caption='Self Reference Min Shares' datatype='real' name='[self_reference_min_shares]' role='measure' type='quantitative' />
+      <column caption='Shares' datatype='integer' name='[shares]' role='measure' type='quantitative' />
+      <column caption='Timedelta' datatype='real' name='[timedelta]' role='measure' type='quantitative' />
+      <column caption='Title Sentiment Polarity' datatype='real' name='[title_sentiment_polarity]' role='measure' type='quantitative' />
+      <column caption='Title Subjectivity' datatype='real' name='[title_subjectivity]' role='measure' type='quantitative' />
+      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+      <column caption='Weekday Is Friday' datatype='real' name='[weekday_is_friday]' role='measure' type='quantitative' />
+      <column caption='Weekday Is Monday' datatype='real' name='[weekday_is_monday]' role='measure' type='quantitative' />
+      <column caption='Weekday Is Saturday' datatype='real' name='[weekday_is_saturday]' role='measure' type='quantitative' />
+      <column caption='Weekday Is Sunday' datatype='real' name='[weekday_is_sunday]' role='measure' type='quantitative' />
+      <column caption='Weekday Is Thursday' datatype='real' name='[weekday_is_thursday]' role='measure' type='quantitative' />
+      <column caption='Weekday Is Tuesday' datatype='real' name='[weekday_is_tuesday]' role='measure' type='quantitative' />
+      <column caption='Weekday Is Wednesday' datatype='real' name='[weekday_is_wednesday]' role='measure' type='quantitative' />
+      <group caption='Outlier' name='[Set 1]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='union'>
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/02/28/myspace-tom-twitter/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/03/02/resume-design/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/03/02/wealth-inequality/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/03/28/blackberry-1-million/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/04/15/dove-ad-beauty-sketches/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/06/07/led-tunnel-tweets/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/07/03/low-cost-iphone/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/07/08/supercut-one-man-trailers/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/07/12/sprint-unlimited-data-for-life/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/08/26/how-to-photoshop-a-person/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/08/28/6000-video-launched-helloflo/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/10/18/childhood-mashups/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/11/12/roomba-880-review/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/11/14/ibm-watson-brief/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/11/15/apple-ios-7-0-4/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/11/18/kanye-west-harvard-lecture/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/11/18/oculus-rift-movie/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/11/25/teenage-online-activity/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/11/26/sprout-battery/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/12/04/christmas-movie-mashup/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/12/04/snl-paul-rudd-one-direction-promo/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/12/09/wearably/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/12/25/xbox-one-getting-started/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2013/12/26/mcdonalds-kills-mcresource-line/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2014/01/07/obama-nsa-reform-lawmakers-meeting/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2014/01/14/australia-heatwave-photos/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2014/01/15/apple-settles-ftc-lawsuit/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2014/01/30/polar-bear-cub-snow/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2014/02/18/ping-pong-trick-shots/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2014/04/09/first-100-gilt-soundcloud-stitchfix/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2014/04/14/travel-tax-refund/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2014/04/15/twitter-improves-for-advertisers/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2014/05/11/iran-copies-american-spy-drone/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2014/10/22/ebola-cdc-active-monitoring/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2014/11/15/5-cant-miss-apps-space-age/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2014/11/24/email-myths/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2014/11/28/ray-rice-gets-another-chance-to-play-in-nfl-after-judge-overturns-suspension/&quot;' />
+          <groupfilter function='member' level='[url]' member='&quot;http://mashable.com/2014/12/04/aston-martin-bond-db10/&quot;' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='ordinal' dim-percentage='0.254545' group-percentage='0.0464646' measure-ordering='ordinal' measure-percentage='0.69899' rowDisplayCount='1000' show-structure='true' user-set-layout='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Number of images'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='OnlineNewsPopularity' name='federated.1rrz9e51vaxs1e17pads70435nw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rrz9e51vaxs1e17pads70435nw4'>
+            <column datatype='string' name='[Num Imgs (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[num_imgs]' new-bin='true'>
+                <bin default-name='false' value='&quot;25 and above&quot;'>
+                  <value>25.0</value>
+                  <value>26.0</value>
+                  <value>27.0</value>
+                  <value>28.0</value>
+                  <value>29.0</value>
+                  <value>30.0</value>
+                  <value>31.0</value>
+                  <value>32.0</value>
+                  <value>33.0</value>
+                  <value>34.0</value>
+                  <value>35.0</value>
+                  <value>36.0</value>
+                  <value>37.0</value>
+                  <value>38.0</value>
+                  <value>39.0</value>
+                  <value>40.0</value>
+                  <value>41.0</value>
+                  <value>42.0</value>
+                  <value>43.0</value>
+                  <value>44.0</value>
+                  <value>45.0</value>
+                  <value>46.0</value>
+                  <value>47.0</value>
+                  <value>48.0</value>
+                  <value>49.0</value>
+                  <value>50.0</value>
+                  <value>51.0</value>
+                  <value>52.0</value>
+                  <value>53.0</value>
+                  <value>54.0</value>
+                  <value>55.0</value>
+                  <value>56.0</value>
+                  <value>57.0</value>
+                  <value>58.0</value>
+                  <value>59.0</value>
+                  <value>60.0</value>
+                  <value>61.0</value>
+                  <value>62.0</value>
+                  <value>63.0</value>
+                  <value>64.0</value>
+                  <value>65.0</value>
+                  <value>66.0</value>
+                  <value>67.0</value>
+                  <value>68.0</value>
+                  <value>69.0</value>
+                  <value>70.0</value>
+                  <value>71.0</value>
+                  <value>73.0</value>
+                  <value>75.0</value>
+                  <value>76.0</value>
+                  <value>77.0</value>
+                  <value>79.0</value>
+                  <value>80.0</value>
+                  <value>83.0</value>
+                  <value>84.0</value>
+                  <value>90.0</value>
+                  <value>91.0</value>
+                  <value>92.0</value>
+                  <value>93.0</value>
+                  <value>98.0</value>
+                  <value>99.0</value>
+                  <value>100.0</value>
+                  <value>101.0</value>
+                  <value>108.0</value>
+                  <value>111.0</value>
+                  <value>128.0</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column aggregation='Sum' caption='Num Imgs' datatype='real' name='[num_imgs]' role='dimension' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1rrz9e51vaxs1e17pads70435nw4].[Num Imgs (group)]' value='24' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1rrz9e51vaxs1e17pads70435nw4].[Num Imgs (group)]' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5822099447250366' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='440' />
+                <format attr='maxheight' value='440' />
+                <format attr='minwidth' value='1820' />
+                <format attr='maxwidth' value='1820' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rrz9e51vaxs1e17pads70435nw4].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1rrz9e51vaxs1e17pads70435nw4].[Num Imgs (group)]</cols>
+      </table>
+      <simple-id uuid='{518F5F8A-3F32-4CDB-BCC2-631F32F6F33B}' />
+    </worksheet>
+    <worksheet name='Number of videos'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='OnlineNewsPopularity' name='federated.1rrz9e51vaxs1e17pads70435nw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rrz9e51vaxs1e17pads70435nw4'>
+            <column datatype='string' name='[Num Videos (group)]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[num_videos]' new-bin='true'>
+                <bin default-name='true' value='&quot;7, 8, 9 and 35 more&quot;'>
+                  <value>7.0</value>
+                  <value>8.0</value>
+                  <value>9.0</value>
+                  <value>10.0</value>
+                  <value>11.0</value>
+                  <value>12.0</value>
+                  <value>13.0</value>
+                  <value>14.0</value>
+                  <value>15.0</value>
+                  <value>16.0</value>
+                  <value>17.0</value>
+                  <value>18.0</value>
+                  <value>19.0</value>
+                  <value>20.0</value>
+                  <value>21.0</value>
+                  <value>22.0</value>
+                  <value>23.0</value>
+                  <value>24.0</value>
+                  <value>25.0</value>
+                  <value>26.0</value>
+                  <value>27.0</value>
+                  <value>28.0</value>
+                  <value>29.0</value>
+                  <value>30.0</value>
+                  <value>31.0</value>
+                  <value>32.0</value>
+                  <value>33.0</value>
+                  <value>34.0</value>
+                  <value>35.0</value>
+                  <value>36.0</value>
+                  <value>38.0</value>
+                  <value>42.0</value>
+                  <value>46.0</value>
+                  <value>48.0</value>
+                  <value>49.0</value>
+                  <value>50.0</value>
+                  <value>51.0</value>
+                  <value>53.0</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column aggregation='Sum' caption='Num Videos' datatype='real' name='[num_videos]' role='dimension' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rrz9e51vaxs1e17pads70435nw4].[Num Videos (group)]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Num Videos (group)]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[Num Videos (group)]' member='&quot;58.0&quot;' />
+                <groupfilter function='member' level='[Num Videos (group)]' member='&quot;59.0&quot;' />
+                <groupfilter function='member' level='[Num Videos (group)]' member='&quot;65.0&quot;' />
+                <groupfilter function='member' level='[Num Videos (group)]' member='&quot;66.0&quot;' />
+                <groupfilter function='member' level='[Num Videos (group)]' member='&quot;7, 8, 9 and 35 more&quot;' />
+                <groupfilter function='member' level='[Num Videos (group)]' member='&quot;73.0&quot;' />
+                <groupfilter function='member' level='[Num Videos (group)]' member='&quot;74.0&quot;' />
+                <groupfilter function='member' level='[Num Videos (group)]' member='&quot;75.0&quot;' />
+                <groupfilter function='member' level='[Num Videos (group)]' member='&quot;91.0&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1rrz9e51vaxs1e17pads70435nw4].[Num Videos (group)]' value='20' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='444' />
+                <format attr='maxheight' value='444' />
+                <format attr='minwidth' value='1060' />
+                <format attr='maxwidth' value='1060' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rrz9e51vaxs1e17pads70435nw4].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1rrz9e51vaxs1e17pads70435nw4].[Num Videos (group)]</cols>
+      </table>
+      <simple-id uuid='{C26034DA-0D85-4E71-8AC7-0D3E220E3FCB}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='OnlineNewsPopularity' name='federated.1rrz9e51vaxs1e17pads70435nw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rrz9e51vaxs1e17pads70435nw4'>
+            <column-instance column='[Set 1]' derivation='InOut' name='[io:Set 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[url]' derivation='None' name='[none:url:nk]' pivot='key' type='nominal' />
+            <column caption='Shares' datatype='integer' name='[shares]' role='measure' type='quantitative' />
+            <column-instance column='[shares]' derivation='Sum' name='[sum:shares:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[timedelta]' derivation='Sum' name='[sum:timedelta:qk]' pivot='key' type='quantitative' />
+            <column caption='Timedelta' datatype='real' name='[timedelta]' role='measure' type='quantitative' />
+            <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rrz9e51vaxs1e17pads70435nw4].[io:Set 1:nk]'>
+            <groupfilter function='member' level='[io:Set 1:nk]' member='false' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1rrz9e51vaxs1e17pads70435nw4].[io:Set 1:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.1rrz9e51vaxs1e17pads70435nw4].[sum:shares:qk]' value='64' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1rrz9e51vaxs1e17pads70435nw4].[none:url:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rrz9e51vaxs1e17pads70435nw4].[sum:shares:qk]</rows>
+        <cols>[federated.1rrz9e51vaxs1e17pads70435nw4].[sum:timedelta:qk]</cols>
+      </table>
+      <simple-id uuid='{6734776D-F3AB-420F-BEDA-4308CA243727}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Number of images'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8629D347-559B-44EA-8B40-B47C1763E149}' />
+    </window>
+    <window class='worksheet' name='Number of videos'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4CCC043C-CE9C-41E8-8AD3-B4E4BF4BBB4A}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rrz9e51vaxs1e17pads70435nw4].[io:Set 1:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6CE7E9BD-0AA1-455D-8F71-CDE4E0D15CDE}' />
+    </window>
+  </windows>
+</workbook>
